@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change My Image Updated</title>
+    <style>
+        img {
+            width: 1000px;
+            height: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            margin: center; 
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Change My Image</h1>
+    <img id="myImage" src="images/17.jpg" alt="Image">
+    <br>
+    <button onclick="toggle()" style="width: 1000px; height: 100px; background-color: rgba(231, 150, 29, 0.805); font-size: 50px; font-style: inherit;">CHANGE IMAGE</button>
+
+
+    <script>
+    
+
+            var isOriginal = true;
+            
+            function toggle(){
+
+            var img = document.getElementById('myImage');
+
+            if(isOriginal){
+                img.src = 'images/16.jpg';
+                isOriginal = false;
+
+            } else {
+
+                img.src = 'images/17.jpg';
+                isOriginal = true;
+            }
+
+            }
+
+    </script>
+</body>
+</html>
